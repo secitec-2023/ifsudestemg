@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Nunito Sans", sans-serif;
+  z-index: 0;
+  /* max-width: 100vw; */
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(231, 231, 231, 1) 100%
+  );
+}
+
+@keyframes slideInFromRight {
+  from {
+    /*transform: translateY(20%);*/
+    color: rgba(255, 255, 255, 0.3);
+  }
+  to {
+    /*transform: translateX(0);*/
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+#content {
+  animation: slideInFromRight 0.5s forwards;
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  padding: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+#content hr {
+  width: 80%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#text-area h1 {
+  color: #00032c;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+#text-area h2 {
+  color: #00032c;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+#text-area h3 {
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+#text-area p {
+  text-align: justify;
+}
+
+#text-area p span.first-letter {
+  margin-right: 5em; /* Adicione o valor desejado para o espaçamento antes da primeira letra */
+}
+
+#campus-image {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#campus-image img {
+  max-width: 100%; /* Define a largura máxima como 100% do contêiner pai */
+  height: auto;
+}
+
+#campus-image span {
+  margin-top: 1em;
+  text-align: center;
+  max-width: 32em;
+  font-size: smaller;
+}
+
+#programacao-container {
+}
+
+#img-programacao {
+  width: 100%;
+  cursor: zoom-in;
+}
+
+@media (max-width: 768px) {
+  #content {
+    width: 98%;
+  }
+}

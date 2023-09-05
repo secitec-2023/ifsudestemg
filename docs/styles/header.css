@@ -1,0 +1,106 @@
+@keyframes mainHeaderTransition {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes imageFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.restart {
+  color: rgba(0, 0, 0, 0);
+}
+
+.image-fade {
+}
+
+#header {
+  background: rgb(0, 111, 189);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(0, 111, 189, 1) 0%,
+    rgba(0, 33, 219, 1) 22%,
+    rgba(32, 142, 184, 1) 55%,
+    rgba(0, 241, 186, 1) 70%,
+    rgba(0, 212, 206, 1) 76%,
+    rgba(1, 196, 204, 1) 83%,
+    rgba(84, 57, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 111, 189, 1) 0%,
+    rgba(0, 33, 219, 1) 22%,
+    rgba(32, 142, 184, 1) 55%,
+    rgba(0, 241, 186, 1) 70%,
+    rgba(0, 212, 206, 1) 76%,
+    rgba(1, 196, 204, 1) 83%,
+    rgba(84, 57, 255, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(0, 111, 189, 1) 0%,
+    rgba(0, 33, 219, 1) 22%,
+    rgba(32, 142, 184, 1) 55%,
+    rgba(0, 241, 186, 1) 70%,
+    rgba(0, 212, 206, 1) 76%,
+    rgba(1, 196, 204, 1) 83%,
+    rgba(84, 57, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#006fbd", endColorstr="#5439ff", GradientType=1);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#header-image-area {
+  display: flex;
+  height: auto;
+}
+
+#header-image-area img {
+  width: 100%; /* Define a largura da imagem como 100% do contêiner */
+  height: 100%; /* Define a altura da imagem como 100% do contêiner */
+  object-fit: cover; /* Mantém as proporções da imagem e preenche o contêiner */
+}
+
+#header-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 1.2vw;
+  padding-bottom: 1.2vw;
+}
+
+#header-nav a {
+  font-size: medium;
+  color: white;
+  text-decoration: none;
+}
+
+#weeks-container {
+  padding-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  #header-nav a {
+    font-size: 2.5vw;
+  }
+
+  #header-nav {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+  }
+}

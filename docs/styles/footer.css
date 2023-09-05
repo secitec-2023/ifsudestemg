@@ -1,0 +1,11 @@
+#footer-container {
+  display: flex;
+  height: auto;
+}
+
+#footer-container img {
+  margin-left: auto;
+  width: 30%; /* Define a largura da imagem como 100% do contêiner */
+  height: 30%; /* Define a altura da imagem como 100% do contêiner */
+  object-fit: cover;
+}

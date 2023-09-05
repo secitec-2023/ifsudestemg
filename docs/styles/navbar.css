@@ -1,0 +1,74 @@
+@keyframes navSlider {
+  from {
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.3);
+  }
+  to {
+    transform: translateX(0);
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+#navbar-container {
+  flex-wrap: wrap;
+  padding-bottom: 2em;
+  border-bottom: 5px solid rgb(0, 28, 187);
+  z-index: -5;
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  top: 0px;
+}
+
+#navbar-container div {
+  margin-top: 1em;
+  min-width: 7em;
+  width: 16%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: medium;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  background: rgb(0, 63, 139);
+  background: linear-gradient(
+    3deg,
+    rgba(0, 56, 209, 0.377) 0%,
+    rgb(34, 34, 168) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+#navbar-container a {
+  font-size: large;
+  /* font-size: 1.5vw; */
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 87%;
+  width: 93%;
+}
+
+#navbar-container span {
+  color: rgb(0, 37, 116);
+  text-align: center;
+}
+
+#navbar-container span:hover {
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  color: rgb(0, 37, 116);
+}
+
+@media (max-width: 768px) {
+  #navbar-container a {
+    overflow: hidden;
+    font-size: small;
+  }
+}

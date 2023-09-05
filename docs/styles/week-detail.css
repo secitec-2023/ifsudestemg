@@ -1,0 +1,44 @@
+#week-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+#comissao-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4em;
+  text-align: center;
+  font-size: medium;
+}
+
+#download-area {
+  margin-bottom: 2em;
+  margin-top: 5em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#download-area a {
+  margin-bottom: 2em;
+  margin-top: 1em;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  text-align: center;
+  text-decoration: none; /* Remova a decoração de link padrão */
+  border: none;
+  cursor: pointer;
+}
+
+#download-area span {
+}
+
+#download-area img {
+  margin-left: 0.1em;
+  height: 1em;
+}

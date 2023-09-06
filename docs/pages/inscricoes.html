@@ -15,9 +15,66 @@
     <link rel="stylesheet" href="../styles/week-detail.css">
 
     <style>
+        #text-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #text-area h2 {
+            margin-bottom: 1em;
+        }
+
         #text-area p {
             font-weight: bold;
             text-align: center;
+        }
+
+        #form-area {
+            margin-bottom: 2em;
+            margin-top: 2em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #form-area a {
+            margin-top: 1em;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        #form-area span {}
+
+        #form-area img {
+            margin-left: 0.1em;
+            height: 1em;
+        }
+
+        #contato-container {
+            align-items: center;
+            margin-top: 2em;
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #link-insta {
+            text-decoration: underline;
+            color: black;
+        }
+
+        #link-insta:hover {
+            color: #007bff;
         }
     </style>
 </head>
@@ -47,7 +104,17 @@
     <div id="content">
         <div id="text-area">
             <h1>Inscrições</h1>
-            <p>AS INSCRIÇÕES ESTARÃO ABERTAS A PARTIR DO DIA 06/09/2023!!!!!!</p>
+            <h4>Acesse o sistema para inscrições clicando no botão abaixo.</h4>
+            <div id="form-area">
+                <a href="https://www.even3.com.br/secitecjf2023/">
+                    <span>Inscrições SECITEC-2023</span>
+                    <img src="../assets/contact-form.png" alt="Formulario-img">
+                </a>
+            </div>
+            <hr>
+            <p>FIQUEM ATENTOS ÀS NOVIDADES DIRETAMENTE NO INSTAGRAM <a id="link-insta"
+                    href="https://www.instagram.com/secitecifjf/"><span>
+                        @secitecifjf</span></a></p>
         </div>
     </div>
     <footer id="footer-container">
